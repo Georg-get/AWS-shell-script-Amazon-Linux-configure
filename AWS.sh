@@ -16,6 +16,6 @@ git config --global user.email ujif12349@yandex.ru
 ###ssh-keygen###
 ssh-keygen -t rsa -b 4096 -C "ujif12349@yandex.ru" -f "home/ec2-user/.ssh/id_rsa" -q -P ""
 eval "$(ssh-agent -s)"
-ssh-add home/.ssh/id_rsa
+ssh-add home/ec2-user/.ssh/id_rsa
 ###dir prodject###
 mkdir /home/ec2-user/prodject
