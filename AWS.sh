@@ -18,4 +18,7 @@ ssh-keygen -t rsa -b 4096 -C "ujif12349@yandex.ru" -f "home/ec2-user/.ssh/id_rsa
 eval "$(ssh-agent -s)"
 ssh-add home/ec2-user/.ssh/id_rsa
 ###dir prodject###
-mkdir /home/ec2-user/prodject
+#mkdir /home/ec2-user/prodject
+###install gitlab runner ###
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | sudo bash
+sudo yum install gitlab-runner -y
